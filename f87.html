@@ -1,0 +1,615 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>F87: Acousto-Optic Effect &#8212; TP Optics in Heidelberg</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet" />
+  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="F86: Electro-optic effect" href="f86.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">TP Optics in Heidelberg</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Welcome to the FP Optics
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="f85-main.html">
+   F85: Polarization optics
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="f86.html">
+   F86: Electro-optic effect
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   F87: Acousto-Optic Effect
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/f87.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Ff87.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#theory">
+   Theory
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#photon-phonon-model">
+     Photon-phonon model
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#experiments">
+   Experiments
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#experiments-with-a-single-aom">
+     Experiments with a single AOM
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#to-do">
+       To do
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#evaluation">
+       Evaluation
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#two-perpendicular-aoms">
+     Two perpendicular AOMs
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id4">
+       To do
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#note">
+     Note
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="f87-acousto-optic-effect">
+<h1>F87: Acousto-Optic Effect<a class="headerlink" href="#f87-acousto-optic-effect" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="theory">
+<h2>Theory<a class="headerlink" href="#theory" title="Permalink to this headline">¶</a></h2>
+<p>The refractive index of a crystal can be changed by a sound wave.
+Since a sound wave is a periodic density modulation, the refractive
+index itself will also varies periodically. The spatial period of the modulation is the sound wavelength, <span class="math notranslate nohighlight">\(\lambda_s\)</span>.
+A sound wave in a crystal with initial refractive index <span class="math notranslate nohighlight">\(n_0\)</span> can be
+described by:</p>
+<div class="math notranslate nohighlight">
+\[
+  n(x,t)=n-\Delta n_0 \cos \left(\omega t-\frac{2\pi}{\lambda_s}\,x\right)
+\]</div>
+<p><span class="math notranslate nohighlight">\(\Delta n_0\)</span> is the amplitude which is given by the photo-elastic constant <span class="math notranslate nohighlight">\(p\)</span> and the amplitude of the strain (relative displacement) <span class="math notranslate nohighlight">\(s_0\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+  \Delta n_0 = \tfrac{1}{2}p n^3 s_0
+\]</div>
+<p>This is also proportional to the acoustic intensity.</p>
+<div class="figure align-default" id="fig-denmod">
+<a class="reference internal image-reference" href="_images/denmod.png"><img alt="_images/denmod.png" src="_images/denmod.png" style="width: 8cm;" /></a>
+<p class="caption"><span class="caption-number">Fig. 10 </span><span class="caption-text">Modulation of the refractive index by a sound wave</span><a class="headerlink" href="#fig-denmod" title="Permalink to this image">¶</a></p>
+</div>
+<p>The simplest form of interaction between a laser beam and a sound
+wave is the so called Bragg diffraction, which appears for long interaction lengths, i.e. wide crystals.
+Here, the laser beam is reflected partially or totally off planes of equal density in the crystal.</p>
+<div class="figure align-default" id="fig-aom">
+<a class="reference internal image-reference" href="_images/aom1.png"><img alt="_images/aom1.png" src="_images/aom1.png" style="width: 10cm;" /></a>
+<p class="caption"><span class="caption-number">Fig. 11 </span><span class="caption-text">Deformation of a plane wavefront by a sound wave travelling through a thin crystal</span><a class="headerlink" href="#fig-aom" title="Permalink to this image">¶</a></p>
+</div>
+<p>For a short interaction length, i.e. a thin crystal or better a thin sound beam, the
+<strong>Debye-Sears effect</strong> appears. Here the sound beam acts as
+a phase grating: since the laser beam has a certain width, the
+initial plane wavefront is deformed by travelling through the
+sound beam. The parts of the light beam travelling through denser areas of the crystal experience a higher index of refraction, than other parts. This means that the parts of the former plane wavefront incur a phase shift relative to each other.
+In this sense the system is analogous to a grating: in the near field the final wavefront leaving the crystal is bent,
+in the far field it gives rise to an interference pattern with several higher orders, as shown in <a class="reference internal" href="#fig-aom"><span class="std std-numref">Fig. 11</span></a>.</p>
+<p>Since the light interacts with a moving sound wave, the diffracted light is Doppler-shifted.
+This means that the light in higher orders has a higher or lower frequency, depending on the number of the diffraction order.</p>
+<div class="figure align-default" id="fig-diffrac">
+<a class="reference internal image-reference" href="_images/Bragg1.png"><img alt="_images/Bragg1.png" src="_images/Bragg1.png" style="width: 6cm;" /></a>
+<p class="caption"><span class="caption-number">Fig. 12 </span><span class="caption-text">One can observe a maximum in the far field if light reflected from A and B interferes constructively.</span><a class="headerlink" href="#fig-diffrac" title="Permalink to this image">¶</a></p>
+</div>
+<p>To calculate the diffraction angles, have a look at <a class="reference internal" href="#fig-diffrac"><span class="std std-numref">Fig. 12</span></a>. Light reflected from A and B interferes
+constructively, if <a class="reference internal" href="#equation-eq-theta">(12)</a></p>
+<div class="math notranslate nohighlight">
+\[
+  \sin\theta_1+\sin\theta_2=\frac{m\lambda}{\lambda_s}
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(\theta_1\)</span> is the incident angle of the light, <span class="math notranslate nohighlight">\(\theta_2\)</span> is the
+diffraction angle and <span class="math notranslate nohighlight">\(\lambda\)</span> and <span class="math notranslate nohighlight">\(\lambda_s\)</span> are the wavelengths of the light and the sound wave respectively.
+The Bragg condition for constructive interference is fulfilled when</p>
+<div class="math notranslate nohighlight">
+\[
+  \sin\theta_B = \frac{1}{2}\frac{m\lambda}{\lambda_s}
+\]</div>
+<p>with <span class="math notranslate nohighlight">\(\theta_B\)</span> the Bragg-angle.
+In the case of a thin grating, as we have here, we have <span class="math notranslate nohighlight">\(\theta_1 + \theta_2 = 2 \theta_B\)</span>,
+and for a thick grating the more rigorous <span class="math notranslate nohighlight">\(\theta_1=\theta_2=\theta_B\)</span> holds.</p>
+<p>Since the sound wave, i.e. the grating, is moving, one should consider the effects of the Doppler
+shift of a wave reflected on a moving mirror, which is given by</p>
+<div class="math notranslate nohighlight">
+\[
+  \Delta \omega = 2 \omega \frac{v}{c}
+\]</div>
+<p>with <span class="math notranslate nohighlight">\(v\)</span> the velocity of the mirror.
+For the case of the grating in an AOM we have <span class="math notranslate nohighlight">\(v=v_s \sin{\theta_1}\)</span> (see <a class="reference internal" href="#fig-diffrac"><span class="std std-numref">Fig. 12</span></a>)
+so that the resonating frequency inside the crystal (the frequency showing constructive interference on the grating) is the one Doppler shifted to:</p>
+<div class="math notranslate nohighlight">
+\[
+  \omega_{\mathrm{res}}=\omega + 2\omega \frac{v_s \sin{\theta_1}}{c}
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(v_s\)</span> is the sound velocity in the crystal.
+Using again the Bragg condition <span class="math notranslate nohighlight">\(2 \lambda_s \sin \theta_1 = \lambda\)</span> one sees that</p>
+<div class="math notranslate nohighlight">
+\[
+  \Delta \omega = 2 \pi \frac{v_s}{\lambda_s} = \omega_s
+\]</div>
+<p>Thus each diffraction spot has a different optical frequency, given by:</p>
+<div class="math notranslate nohighlight">
+\[
+  \omega_{\mathrm{out}} = \omega_{\mathrm{in}} + m \Delta \omega = \omega_{\mathrm{in}} + m \omega_s
+\]</div>
+<p>or equivalently:</p>
+<div class="math notranslate nohighlight">
+\[
+  \nu_{\mathrm{out}} = \nu_{\mathrm{in}} + m \Delta \nu = \nu_{\mathrm{in}} + m \nu_s
+\]</div>
+<div class="section" id="photon-phonon-model">
+<h3>Photon-phonon model<a class="headerlink" href="#photon-phonon-model" title="Permalink to this headline">¶</a></h3>
+<p>Another way to visualize the effect of an AOM on a light beam is to regard the system as two scattering quasi-particles:
+a photon and a phonon.
+Both quasi-particles carry a momentum of <span class="math notranslate nohighlight">\(\hbar \vec{k}_l\)</span> and <span class="math notranslate nohighlight">\(\hbar \vec{k}_s\)</span>, respectively, with <span class="math notranslate nohighlight">\(\vec{k}_i\)</span> the wave vector of
+the interacting waves.
+Momentum conservation dictates that</p>
+<div class="math notranslate nohighlight" id="equation-aom-momentumconservation">
+<span class="eqno">(10)<a class="headerlink" href="#equation-aom-momentumconservation" title="Permalink to this equation">¶</a></span>\[
+  \vec{k}_{\mathrm{out}} = \vec{k}_{\mathrm{in}} \pm  m\vec{k}_s \, ,
+\]</div>
+<p>and energy conservation dictates</p>
+<div class="math notranslate nohighlight" id="equation-aom-energyconservation">
+<span class="eqno">(11)<a class="headerlink" href="#equation-aom-energyconservation" title="Permalink to this equation">¶</a></span>\[
+  \nu_{\mathrm{out}} = \nu_{\mathrm{in}} \pm  m \nu_s\,.
+\]</div>
+<p>with <span class="math notranslate nohighlight">\(m\)</span> the diffraction order, i.e.  the number of phonons the light wave interacted with.
+Eqs. <a class="reference internal" href="#equation-aom-momentumconservation">(10)</a> and <a class="reference internal" href="#equation-aom-energyconservation">(11)</a> show that the outgoing light wave has undergone a change
+in both frequency and direction with respect to the incident light, proportional to the diffraction order and the used sound frequency.
+Light beams diffracted by the density variations caused by the sound wave interfere constructively when</p>
+<div class="math notranslate nohighlight" id="equation-eq-theta">
+<span class="eqno">(12)<a class="headerlink" href="#equation-eq-theta" title="Permalink to this equation">¶</a></span>\[
+  \sin\theta_1+\sin\theta_2=\frac{m\lambda}{\lambda_s},
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(\theta_1\)</span> is the angle under which the light enters the crystal and <span class="math notranslate nohighlight">\(\theta_2\)</span> is the
+diffraction angle.</p>
+<p>The dependency of the diffraction efficiency of the AOM, meaning the power transmitted to the first
+order maximum, relative to the power in the un-diffracted beam, is given by:</p>
+<div class="math notranslate nohighlight" id="equation-eq-aomefficiency">
+<span class="eqno">(13)<a class="headerlink" href="#equation-eq-aomefficiency" title="Permalink to this equation">¶</a></span>\[
+  R=\sin^2\left(\frac{\pi L}{\lambda \cos\theta_B}\sqrt{\frac{M_2I_s}{2}}\right)
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(L\)</span> is the interaction length of the light beam with the sound wave,
+<span class="math notranslate nohighlight">\(\lambda\)</span> is the optical wavelength, <span class="math notranslate nohighlight">\(\theta_B\)</span> is the Bragg angle,
+<span class="math notranslate nohighlight">\(I_s\)</span> is the intensity of the sound wave.
+<span class="math notranslate nohighlight">\(M_2\)</span> is a <strong>figure of merit</strong> for the used
+acousto-optic material <a class="footnote-reference brackets" href="#material" id="id1">1</a>, in the case of the used TeO<span class="math notranslate nohighlight">\(_2\)</span> the constant is <span class="math notranslate nohighlight">\(M_2 = 34.5\times10^{-15}\)</span>s<span class="math notranslate nohighlight">\(^3\)</span>kg<span class="math notranslate nohighlight">\(^{-1}\)</span>.
+For low sound-input power, the behaviour is approximately linear.
+For higher sound-input powers the power behaves as a squared sine function, as shown in <a class="reference internal" href="#fig-refl"><span class="std std-numref">Fig. 13</span></a>.</p>
+<div class="figure align-default" id="fig-refl">
+<a class="reference internal image-reference" href="_images/refl.png"><img alt="_images/refl.png" src="_images/refl.png" style="width: 6cm;" /></a>
+<p class="caption"><span class="caption-number">Fig. 13 </span><span class="caption-text">Relative power transmitted to the first diffraction order as a function of sound-power</span><a class="headerlink" href="#fig-refl" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+</div>
+<div class="section" id="experiments">
+<h2>Experiments<a class="headerlink" href="#experiments" title="Permalink to this headline">¶</a></h2>
+<p>In this part you will learn how a light beam can interact with a sound beam.</p>
+<p>There are two possibilities for the interaction: the diffraction of a light beam by the Debye-Sears-effect or by Bragg-diffraction.
+In this set-up one can observe the Debye-Sears-effect.
+If the crystal, or better the sound-beam, is thin enough, it behaves
+as a phase grating with period equal to the wavelength of the used sound wave, <span class="math notranslate nohighlight">\(\lambda_s\)</span>.</p>
+<p>The sound wave is not coupled into the crystal by a simple
+loudspeaker, but by an acoustic transducer using the Piezo-electric
+effect: A high-frequency signal (<span class="math notranslate nohighlight">\(\sim110\)</span>MHz) is applied to
+one end of the crystal. The piezo-electric crystal is compressed and
+expanded by the signal thus being compacted and rarefied.
+This density variation which is now moving through the crystal is the sound wave.</p>
+<div class="figure align-default" id="fig-driver">
+<a class="reference internal image-reference" href="_images/PicDriver.jpg"><img alt="_images/PicDriver.jpg" src="_images/PicDriver.jpg" style="width: 6cm;" /></a>
+<p class="caption"><span class="caption-number">Fig. 14 </span><span class="caption-text">Front panel of an AOM driver</span><a class="headerlink" href="#fig-driver" title="Permalink to this image">¶</a></p>
+</div>
+<p>The signals, with a necessary power of <span class="math notranslate nohighlight">\(\sim1\)</span>W, are
+produced by the AOM-drivers, which you will find above the tables.
+The heart of these AOM-drivers is a VCO (Voltage Controlled Oscillator), which produces an oscillating signal with a
+frequency proportional to the input voltage <span class="math notranslate nohighlight">\(V_{\mathrm{in}}\)</span>. <a class="reference internal" href="#fig-driver"><span class="std std-numref">Fig. 14</span></a> shows the front of the driver. If the <em>VCO frequency</em> switch  switch is set to <em>intern</em>,
+the VCO gives out its internally specified frequency <a class="footnote-reference brackets" href="#vco" id="id2">2</a>. When the toggle switch is set to <code class="docutils literal notranslate"><span class="pre">extern</span></code>, the input voltage <span class="math notranslate nohighlight">\(V_{\mathrm{in}}\)</span> can be directly applied to the
+BNC-connector below.</p>
+<p>The signal amplitude is controlled similarly: when the <em>VCO level</em> switch is set to <code class="docutils literal notranslate"><span class="pre">intern</span></code>, the driver gives out its internally specified amplitude <a class="footnote-reference brackets" href="#default" id="id3">3</a>. When the toggle switch is set to <code class="docutils literal notranslate"><span class="pre">extern</span></code>, the signal amplitude can be controlled by a voltage applied to the
+BNC-connector below.</p>
+<p>The output (<em>hf-output</em>) is transmitted directly to the crystal. <strong>If the amplifier is switched on, the output has to be connected !</strong> Otherwise, the entire power would be reflected into the driver, which would kill it immediately! (Reflection of waves on an open end.)</p>
+<div class="section" id="experiments-with-a-single-aom">
+<h3>Experiments with a single AOM<a class="headerlink" href="#experiments-with-a-single-aom" title="Permalink to this headline">¶</a></h3>
+<p>In the following experiments, construct your set-up according to <a class="reference internal" href="#fig-1aom"><span class="std std-numref">Fig. 15</span></a>.</p>
+<div class="figure align-default" id="fig-1aom">
+<a class="reference internal image-reference" href="_images/1aomaufbau.png"><img alt="_images/1aomaufbau.png" src="_images/1aomaufbau.png" style="width: 10cm;" /></a>
+<p class="caption"><span class="caption-number">Fig. 15 </span><span class="caption-text">The angles can be determined by measuring the distance between the first and the zero order maximum.</span><a class="headerlink" href="#fig-1aom" title="Permalink to this image">¶</a></p>
+</div>
+<div class="section" id="to-do">
+<h4>To do<a class="headerlink" href="#to-do" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>Adjust the AOM so that the amplitude of the diffraction pattern is approximately symmetric in both <span class="math notranslate nohighlight">\(\pm1\)</span> orders.
+Measure the diffraction angles of the first and second order maxima for different frequencies, see <a class="reference internal" href="#fig-1aom"><span class="std std-numref">Fig. 15</span></a>.
+This AOM can work at <span class="math notranslate nohighlight">\(110\pm25\)</span> MHz, use a suitable stepsize. You can increase the precision of your result when you reduce the
+relative errors in your measurement; construct your set-up accordingly.</p></li>
+<li><p>Measure the power in one first order maximum, relative to the power in the undiffracted beam,
+vs. the <em>frequency</em> of the sound wave in the same range and stepsize as before.
+Make sure beforehand that the photodiode is not saturated and reduce laser power if necessary (e.g. using a polarizer
+and PBS to couple power out of the main beam.)</p></li>
+<li><p>Optimize the power in the first order maximum. Determine the relation between the power in the first order maximum, relative to the power in the un-diffracted beam vs. the <em>amplitude</em> of the sound wave, see also <a class="reference internal" href="#fig-refl"><span class="std std-numref">Fig. 13</span></a>.
+Make sure beforehand that the photodiode is not saturated, as before.</p></li>
+</ul>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Parameter</p></th>
+<th class="head"><p>value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Optical wavelength</p></td>
+<td><p><span class="math notranslate nohighlight">\(\lambda=632.8\)</span>~nm</p></td>
+</tr>
+<tr class="row-odd"><td><p>AOM material</p></td>
+<td><p>TeO<span class="math notranslate nohighlight">\(_2\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>Crystal length</p></td>
+<td><p><span class="math notranslate nohighlight">\(L=20\)</span>~mm</p></td>
+</tr>
+<tr class="row-odd"><td><p>Indices of refraction</p></td>
+<td><p><span class="math notranslate nohighlight">\(n_o=2.261\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>at  <span class="math notranslate nohighlight">\(\lambda=633\)</span>~nm</p></td>
+<td><p><span class="math notranslate nohighlight">\(n_e=2.142\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="evaluation">
+<h4>Evaluation<a class="headerlink" href="#evaluation" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>Plot and evaluate the data of your measurements.</p></li>
+<li><p>Determine the sound velocity in the AOM-crystal.</p></li>
+<li><p>What is the wavelength of the sound in the crystal? On how many grating periods does the light diffract?</p></li>
+<li><p>Determine the sound power in the crystal at the optimum deflection efficiency.</p></li>
+<li><p>Which elements in the AOM-set-up determine the optimum working frequency?</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="two-perpendicular-aoms">
+<h3>Two perpendicular AOMs<a class="headerlink" href="#two-perpendicular-aoms" title="Permalink to this headline">¶</a></h3>
+<p>For the next series of experiments, adjust two AOMs perpendicular to each other, so that the laser beam traverses both AOMs,
+see <a class="reference internal" href="#fig-2aom"><span class="std std-numref">Fig. 16</span></a>. Put both AOMs close (<span class="math notranslate nohighlight">\(\stackrel{&lt;}{_\sim} 1\)</span>cm) to each other.</p>
+<div class="figure align-default" id="fig-2aom">
+<a class="reference internal image-reference" href="_images/2aomaufbau.png"><img alt="_images/2aomaufbau.png" src="_images/2aomaufbau.png" style="width: 10cm;" /></a>
+<p class="caption"><span class="caption-number">Fig. 16 </span><span class="caption-text">A set-up with two AOMs perpendicular to each other</span><a class="headerlink" href="#fig-2aom" title="Permalink to this image">¶</a></p>
+</div>
+<p>On the optical table, you will find a box with one input-port and two output-ports. This is the so-called phase-shifting box.
+The phase-shifting box takes a single input signal which it transmits to both output ports.
+When the incoming signal is periodic, the box allows you to delay the output on one output port, thus to change the relative
+phase between both output signals.
+The box also allows you to add a voltage offset to each output signal independently. For the operation of the phase-shifting box you have to create <span class="math notranslate nohighlight">\(0V\)</span> and <span class="math notranslate nohighlight">\(\pm 18\)</span>V. This only works with the power supply that has two independent outputs that allow to produce more than 18V individually.</p>
+<div class="section" id="id4">
+<h4>To do<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
+<p>Connect each output of the phase-shifting box to the frequency-control inputs of one AOM driver.
+Do so via the oscilloscope, so that you can monitor that the applied voltages remain inside the allowed boundaries.</p>
+<ul class="simple">
+<li><p>What diffraction pattern of the laser do you expect? What do you get?</p></li>
+<li><p>What happens to the diffraction pattern when you change one or both of the offset voltages? Why is that?</p></li>
+<li><p>Now connect the function generator to the phase shifting box input. It may be enlightening to switch the oscilloscope between
+YT-display (regular format) and the XY-mode. Here channel 1 is displayed as X, channel 2 as Y on the oscilloscope display. <strong>Note that the signal offset-value is not shown when the oscilloscope is in XY-mode</strong>.</p></li>
+<li><p>Make sure you stay within the limits.</p></li>
+</ul>
+<p>Next step:</p>
+<ul class="simple">
+<li><p>What happens to the diffraction pattern when you modulate the sound <em>amplitudes</em> at a modulation frequency of
+<span class="math notranslate nohighlight">\(\sim 1-100\)</span>Hz? And above? And for different input wave forms?</p></li>
+<li><p>What happens to the diffraction pattern when you modulate the sound <em>frequencies</em> of both AOMs simultaneously
+at a modulation frequency of <span class="math notranslate nohighlight">\(\sim\)</span>1-100Hz? And above? And for different input wave forms (sine, triangle, block)?</p></li>
+<li><p>Observe and explain the diffraction patterns at a relative phase difference between both output channels of 0<span class="math notranslate nohighlight">\(^\circ\)</span>,
+90<span class="math notranslate nohighlight">\(^\circ\)</span>, and 180<span class="math notranslate nohighlight">\(^\circ\)</span>.</p></li>
+<li><p>Compare the diffraction spots of the zeroth and first rows and columns respectively for each relative phase difference.
+How are the patterns connected to each other? Can you use the previous steps to draw a circle with the <span class="math notranslate nohighlight">\((\pm 1,\pm 1)\)</span> or <span class="math notranslate nohighlight">\((\pm 1,\pm 2)\)</span> order?
+And with the <span class="math notranslate nohighlight">\((\pm 2,\pm 2)\)</span> order?</p></li>
+<li><p>How do these effects relate to the polarization state of light, in the sense of two perpendicular oscillating fields?
+Evaluate your observations in this part of the practicum in relation to what you learned in the first part of the practicum.</p></li>
+<li><p>The phase-shifting box and its effect on the pattern of the <span class="math notranslate nohighlight">\((\pm 1,\pm 1)\)</span> order can be seen as the analogue to another part
+of the practicum: which part?</p></li>
+</ul>
+<p>Connect each AOM to a different function generator (again via the oscilloscope).
+In this way, you can observe the effects of having different frequencies and varying relative phases between
+both modulation signals.
+The phase-shifting box is unnecessary here. (You might have to borrow the second frequency generator from your
+colleagues for a couple of minutes).</p>
+<ul class="simple">
+<li><p>Try to modulate the sound frequency of one AOM <em>exactly</em> twice, three times,…, as fast as the other one.
+What happens when the modulation is not <em>exactly</em> <span class="math notranslate nohighlight">\(n\)</span> times the other?
+How can you tell when the phase difference is stable?</p></li>
+<li><p>Can you now draw a circle with the <span class="math notranslate nohighlight">\((\pm 1,\pm 2)\)</span> order? And with the <span class="math notranslate nohighlight">\((\pm 2,\pm 2)\)</span> order?</p></li>
+<li><p>How do these effects relate to the polarization state of light in the sense of two perpendicular oscillating fields?</p></li>
+<li><p>What is the difference between a laser and ‘regular’ light (e.g.\ from a light bulb)?</p></li>
+<li><p>What do the coherence time and -length of a laser mean?</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="note">
+<h3>Note<a class="headerlink" href="#note" title="Permalink to this headline">¶</a></h3>
+<p>AOMs are used for several purposes. Usually the zeroth order, the un-diffracted beam, is blocked and only the first order is used.
+With an AOM one can realise a fast switch for optical signals, since the switching time is determined by the intensity slope
+of the sound pulse and its velocity inside the crystal. Switching times of <span class="math notranslate nohighlight">\(\sim 10\)</span>ns can be reached.</p>
+<p>In atom-optical or spectroscopic experiments the frequency shift of the orders is used: the wavelength (frequency) of a laser is
+fixed to some convenient value near the frequency desired for the experiment. AOMs then allow to generate several different frequencies
+for the experiments all derived from the same center frequency delivered by the single laser, rather than to have to build several
+lasers.</p>
+<p>Other purposes use the scanning function when sweeping the input frequency: e.g. laser shows.
+But the most prominent use is the use in laser-printers: AOMs deflect a laser beam across an electrically charged drum and induce a
+small, local discharge. At these spots toner particles will stick, which can then be stamped onto the paper. In this case
+two-dimensional deflection is performed by having two piezo-elements on different faces of a single crystal, rather than having
+two independent AOMs.</p>
+<hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="material"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p><span class="math notranslate nohighlight">\(M_2 = n_0^6 p^2 / \rho v_s^3\)</span>, with <span class="math notranslate nohighlight">\(n_0\)</span> the refractive index,
+<span class="math notranslate nohighlight">\(p\)</span> the photo-elastic constant, <span class="math notranslate nohighlight">\(\rho\)</span> the material density and <span class="math notranslate nohighlight">\(v_s\)</span> the sound velocity in the crystal.</p>
+</dd>
+<dt class="label" id="vco"><span class="brackets"><a class="fn-backref" href="#id2">2</a></span></dt>
+<dd><p>in principle one can change the VCO-input voltage - and thus the generated frequency - by turning the screw under <em>Frequency</em>. <strong>This should only be done by the tutor!</strong></p>
+</dd>
+<dt class="label" id="default"><span class="brackets"><a class="fn-backref" href="#id3">3</a></span></dt>
+<dd><p>In principle one can change the default signal amplitude  by turning the screw under
+<code class="docutils literal notranslate"><span class="pre">Amplitude</span></code>. <strong>This should only be done by the tutor!</strong></p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="f86.html" title="previous page">F86: Electro-optic effect</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By The tutors of the FP optics<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>

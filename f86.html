@@ -1,0 +1,854 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>F86: Electro-optic effect &#8212; TP Optics in Heidelberg</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet" />
+  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="F87: Acousto-Optic Effect" href="f87.html" />
+    <link rel="prev" title="F85: Polarization optics" href="f85-main.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">TP Optics in Heidelberg</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Welcome to the FP Optics
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="f85-main.html">
+   F85: Polarization optics
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   F86: Electro-optic effect
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="f87.html">
+   F87: Acousto-Optic Effect
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/f86.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Ff86.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#theory">
+   Theory
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-pockels-cell">
+     The Pockels Cell
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#transverse-intensity-modulation">
+     Transverse Intensity Modulation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#optical-activity-and-faraday-effect">
+     Optical Activity and Faraday-Effect
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#experiment">
+   Experiment
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#characterization-of-the-high-voltage-supply-familiarization-with-the-set-up">
+     Characterization of the high voltage supply / Familiarization with the set-up
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mach-zehnder-interferometer">
+     Mach-Zehnder interferometer
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#todo">
+       ToDo
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#evaluation">
+       Evaluation
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#polarization-manipulation-intensity-modulation">
+     Polarization Manipulation / Intensity Modulation
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#to-do">
+       To do
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id2">
+       Evaluation
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#linear-amplitude-modulation">
+     Linear Amplitude Modulation
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id3">
+       Evaluation
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#note">
+     Note
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="f86-electro-optic-effect">
+<h1>F86: Electro-optic effect<a class="headerlink" href="#f86-electro-optic-effect" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="theory">
+<h2>Theory<a class="headerlink" href="#theory" title="Permalink to this headline">¶</a></h2>
+<p>Some materials change their optical properties when they are brought into an electric field. To use this effect one needs an electro-optic medium, such as some cubic crystals; they called electro-optical modulators (EOM).
+In that case, the refractive index <span class="math notranslate nohighlight">\(n\)</span> of the medium becomes a function of the applied
+field <span class="math notranslate nohighlight">\(n=n(E)\)</span>. Since the variations of <span class="math notranslate nohighlight">\(n\)</span> with <span class="math notranslate nohighlight">\(E\)</span> are only small, <span class="math notranslate nohighlight">\(n(E)\)</span> can be expanded in a Taylor
+series about <span class="math notranslate nohighlight">\(E=0\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+  n(E)=n(0)+\left.\left(\frac{dn}{dE}\right)\right|_{E=0}E+\frac{1}{2}\left.\left(\frac{d^{2}n}{dE^{2}}\right)\right|_{E=0}E^2+ ..
+\]</div>
+<p>Using the coefficients</p>
+<div class="math notranslate nohighlight">
+\[
+  r=\frac{-2}{n^{3}}\left.\left(\frac{dn}{dE}\right)\right|_{E=0}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+  s=\frac{-1}{n^3} \left.\left(\frac{d^{2}n}{dE^{2}}\right)\right|_{E=0}
+\]</div>
+<p>and neglecting higher order terms, one can rewrite <span class="math notranslate nohighlight">\(n(E)\)</span> as</p>
+<div class="math notranslate nohighlight" id="equation-eq-pockelsapprox">
+<span class="eqno">(2)<a class="headerlink" href="#equation-eq-pockelsapprox" title="Permalink to this equation">¶</a></span>\[
+n(E)=n-\tfrac{1}{2}rn^{3}E-\tfrac{1}{2}sn^{3}E^{2}.
+\]</div>
+<p>Typical values for <span class="math notranslate nohighlight">\(r\)</span> are <span class="math notranslate nohighlight">\(10^{-12}\)</span> to <span class="math notranslate nohighlight">\(10^{-10}\)</span> m/V. It is sometimes convenient to use the electric permittivity instead of the refractive index:
+<span class="math notranslate nohighlight">\( \eta=\varepsilon_{0}/\varepsilon \)</span>.
+With</p>
+<div class="math notranslate nohighlight">
+\[
+  \Delta\eta=\left(\frac{d\eta}{dn}\right) \Delta n
+\]</div>
+<p>this yields</p>
+<div class="math notranslate nohighlight" id="equation-eq-eoe">
+<span class="eqno">(3)<a class="headerlink" href="#equation-eq-eoe" title="Permalink to this equation">¶</a></span>\[
+  \eta(E)\approx\eta(0)+rE+sE^{2}
+\]</div>
+<p>For <span class="math notranslate nohighlight">\(r \gg s\)</span> we obtain the linear electro-optic effect or Pockels Effect, where the refractive index depends linearly on
+the applied field. In that case the equations are reduced to <span class="math notranslate nohighlight">\(\eta=\eta_{0}+rE\)</span>
+and</p>
+<div class="math notranslate nohighlight" id="equation-eq-npockels">
+<span class="eqno">(4)<a class="headerlink" href="#equation-eq-npockels" title="Permalink to this equation">¶</a></span>\[
+  n(E) \approx n_{0}- \frac{1}{2} rn^{3}E.
+\]</div>
+<p>Where <span class="math notranslate nohighlight">\(r\)</span> is called the Pockels coefficient.</p>
+<p>Similarly, when <span class="math notranslate nohighlight">\(r \ll s\)</span>, we can see from Eq. <a class="reference internal" href="#equation-eq-eoe">(3)</a> that we obtain a quadratic dependence of
+refractive index on the electric field. This is known as the Kerr effect, which will not be studied here.</p>
+<p>Since the electro-optic crystals are generally birefringent, the effect of the index of refraction on the light is governed by the relative orientation of the electric field,
+the crystal axes and the beam path. Thus, the Pockels coefficient <span class="math notranslate nohighlight">\(r\)</span> in Eq. <a class="reference internal" href="#equation-eq-pockelsapprox">(2)</a> is actually
+only one entry from a Pockels coefficient-tensor.</p>
+<div class="math notranslate nohighlight">
+\[
+  \eta_{ij}(E)=\eta_{ij}+\sum_{k}r_{ijk}E_{k}=\eta_{ij}+\Delta\eta_{ij}.
+\]</div>
+<p>Since the index ellipsoid, the indicatrix, can now no longer be written with just the principal axes,
+we have to revert to its general form:</p>
+<div class="math notranslate nohighlight">
+\[
+ \left(\frac{1}{n^2} \right)_{1} x^2 + \left(\frac{1}{n^2} \right)_{2}y^2 + \left(\frac{1}{n^2} \right)_{3}z^2 + 2\left(\frac{1}{n^2} \right)_{4}yz +  2\left(\frac{1}{n^2}\right)_{5}xz + 2\left(\frac{1}{n^2} \right)_{6}xy = 1
+\]</div>
+<p>We thus obtain for the different components:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{pmatrix}
+\Delta(1/n^2)_1\\ \Delta(1/n^2)_2\\ \Delta(1/n^2)_3\\ \Delta(1/n^2)_4\\ \Delta(1/n^2)_5\\ \Delta(1/n^2)_6\\
+\end{pmatrix}
+=
+\begin{pmatrix}
+r_{11}&amp;r_{12}&amp;r_{13}\\r_{21}&amp;r_{22}&amp;r_{23}\\r_{31}&amp;r_{32}&amp;r_{33}\\r_{41}&amp;r_{42}&amp;r_{43}\\r_{51}&amp;r_{52}&amp;r_{53}\\r_{61}&amp;r_{62}&amp;r_{63}
+\end{pmatrix}
+\begin{pmatrix}
+E_x\\E_y\\E_z
+\end{pmatrix} .\end{split}\]</div>
+<p>The entries in the <span class="math notranslate nohighlight">\(r\)</span> matrix are constrained by the crystal symmetry. The typical magnitudes for the <span class="math notranslate nohighlight">\(r_{ij}\)</span>-coefficients are <span class="math notranslate nohighlight">\(10^{-12}\)</span> m/V. The material used in the practicum is LiNbO<span class="math notranslate nohighlight">\(_{3}\)</span>. It is a uniaxial crystal with a crystal symmetry <span class="math notranslate nohighlight">\(3m\)</span> and it has indices of refraction <span class="math notranslate nohighlight">\(n_{1}=n_{2}=n_{o} , n_{3}=n_{e}\)</span>. The Pockels Coefficients for LiNbO<span class="math notranslate nohighlight">\(_3\)</span> are:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{pmatrix}
+0&amp;-r_{22}&amp;r_{13}\\0&amp;r_{22}&amp;r_{13}\\0&amp;0&amp;r_{33}\\0&amp;r_{51}&amp;0\\r_{51}&amp;0&amp;0\\-r_{22}&amp;0&amp;0
+\end{pmatrix}
+=
+\begin{pmatrix}
+0&amp;-3,4&amp;8,6\\0&amp;3,4&amp;8,6\\0&amp;0&amp;30,8\\0&amp;28&amp;0\\28&amp;0&amp;0\\-3,4&amp;0&amp;0
+\end{pmatrix}\times10^{-12}~{\mathrm{m/V}}
+\end{split}\]</div>
+<p>Where the first matrix shows the general case for crystals with <span class="math notranslate nohighlight">\(3m\)</span> symmetry.
+However, the Pockels coefficients are very hard to measure reliably and they can be affected strongly by contaminants inside the crystal.
+Therefore, the above numerical values are only indicative <a class="footnote-reference brackets" href="#values" id="id1">1</a>.</p>
+<p>For the case of a crystal without an applied field, the indicatrix is given by</p>
+<div class="math notranslate nohighlight" id="equation-symmetricindicatrix">
+<span class="eqno">(5)<a class="headerlink" href="#equation-symmetricindicatrix" title="Permalink to this equation">¶</a></span>\[
+  \frac{1}{n_o^2}\,x^2+\frac{1}{n_o^2}\,y^2+\frac{1}{n_e^2}\,z^2 = 1
+\]</div>
+<p>Depending on the direction of the applied electric field and the direction of the light
+through the crystal, several distinct situations are possible.
+Each assembly shows a different behaviour.</p>
+<p>One of the most widespread orientations is with the Pockels cell having a longitudinal field,
+i.e. applied along the extraordinary axis, <span class="math notranslate nohighlight">\(z\)</span>, and the light also travelling along that axis.
+This means that the light passes through transparent electrodes.
+In a cell with a transverse field the electric field can be applied along the ordinary axis, <span class="math notranslate nohighlight">\(x\)</span>,
+and the light then travels along the extraordinary axis, the optical axis <span class="math notranslate nohighlight">\(z\)</span>.</p>
+<p>The Pockels cell of this practicum, however, has the electric field applied along the extraordinary axis <span class="math notranslate nohighlight">\(z\)</span>, with the
+light travelling along one of the ordinary axes, the <span class="math notranslate nohighlight">\(y\)</span>-axis. In this case, the applied electric field <span class="math notranslate nohighlight">\(\vec{E} = E_z\)</span> modifies the
+indicatrix to:</p>
+<div class="math notranslate nohighlight">
+\[\left(\frac{1}{n_{o}^{2}}+r_{13}E_z\right) x^{2}
++ \left(\frac{1}{n_{o}^{2}}+r_{13}E_z\right) y^{2}
++ \left(\frac{1}{n_{e}^{2}}+r_{33}E_z\right) z^{2}=1\]</div>
+<p>This equation can be cast in the form of Eq. <a class="reference internal" href="#equation-symmetricindicatrix">(5)</a></p>
+<div class="math notranslate nohighlight">
+\[
+  \frac{1}{{n_{o}'}^{2}(E)}\, x^2 + \frac{1}{{n_{o}'}^{2}(E)}\,y^2 + \frac{1}{{n_{e}'}^{2}(E)}\,z^2 = 1
+\]</div>
+<p>with the modified ordinary and extraordinary indices of refraction <span class="math notranslate nohighlight">\(n_{o}'(E)\)</span> and <span class="math notranslate nohighlight">\(n_{e}'(E)\)</span> given by</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+  n_o'(E) = \frac{n_o}{\sqrt{\smash[b]{1+r_{13}^{\phantom{3}} n_o^3 E_z^{\phantom{3}}}}}
+\qquad {\mathrm{and}} \qquad
+  n_e'(E) = \frac{n_e}{\sqrt{\smash[b]{1+r_{33}^{\phantom{3}} n_e^3 E_z^{\phantom{3}}}}}.\\
+\end{split}\]</div>
+<p>With the approximation <span class="math notranslate nohighlight">\( 1/\sqrt{1+x} \approx 1-\tfrac{1}{2} x \)</span> for small <span class="math notranslate nohighlight">\(x\)</span>, we can indeed rewrite these indices of refraction
+in the manner we have seen before in Eqs. <a class="reference internal" href="#equation-eq-pockelsapprox">(2)</a> and <a class="reference internal" href="#equation-eq-npockels">(4)</a>:</p>
+<div class="math notranslate nohighlight" id="equation-approx">
+<span class="eqno">(6)<a class="headerlink" href="#equation-approx" title="Permalink to this equation">¶</a></span>\[
+n_o'(E)\approx n_o - \tfrac{1}{2}r_{13}^{\phantom{3}} n_{o}^{3} E_z^{\phantom{3}}
+ \qquad {\mathrm{and}} \qquad
+n_e'(E)\approx n_e - \tfrac{1}{2}r_{33}^{\phantom{3}} n_{e}^{3} E_z^{\phantom{3}}
+\]</div>
+<div class="section" id="the-pockels-cell">
+<h3>The Pockels Cell<a class="headerlink" href="#the-pockels-cell" title="Permalink to this headline">¶</a></h3>
+<p>An electro-optic crystal between two capacitor plates is called an electro-optical modulator.
+When the crystal exhibits the Pockels effect it is called a Pockels cell.</p>
+<p>For light with a wavelength <span class="math notranslate nohighlight">\(\lambda\)</span> travelling through a medium of length <span class="math notranslate nohighlight">\(L\)</span> with an index of refraction <span class="math notranslate nohighlight">\(n\)</span>,
+the incurred phase in the medium is given by:</p>
+<div class="math notranslate nohighlight">
+\[
+  \Phi = 2\pi n L /\lambda
+\]</div>
+<p>Since each ordinary and extraordinary axis, has a different index of refraction, <span class="math notranslate nohighlight">\(n_o\)</span> and <span class="math notranslate nohighlight">\(n_e\)</span>, respectively.
+Light travelling through a birefringent crystal experiences a phase retardation <span class="math notranslate nohighlight">\(\Delta\Phi\)</span> between the two
+polarizations equal to</p>
+<div class="math notranslate nohighlight">
+\[
+ \Delta \Phi = \frac{2\pi}{\lambda} \left(n_e-n_o\right)L
+\]</div>
+<p>With a Pockels cell one can manipulate both <span class="math notranslate nohighlight">\(n_o\)</span> and <span class="math notranslate nohighlight">\(n_e\)</span> by the strength of the electric field, as outlined above.
+The phase retardation <span class="math notranslate nohighlight">\(\Delta\Phi\)</span> due to a Pockels cell with an applied field <span class="math notranslate nohighlight">\(E\)</span> is thus given by
+$<span class="math notranslate nohighlight">\(
+  \Delta \Phi(E)=\frac{2\pi}{\lambda} \left(n_e'(E)-n_o'(E)\right)L.
+\)</span>$</p>
+<p>using the approximations of Eqs. <a class="reference internal" href="#equation-approx">(6)</a> this becomes:</p>
+<div class="math notranslate nohighlight">
+\[
+  \Delta \Phi(E)=
+\frac{2\pi }{\lambda}\left(n_e-n_o-\tfrac{1}{2}\left(r_{33}^{\phantom{3}} n_e^{3}-r_{13}^{\phantom{3}} n_o^{3}\right)E_z\right) L  .
+\]</div>
+<p>With the applied voltage <span class="math notranslate nohighlight">\(V=Ed\)</span> we thus obtain that the retardation is given by Eq. <a class="reference internal" href="#equation-eq-phiexp">(8)</a>:</p>
+<div class="math notranslate nohighlight" id="equation-eq-phi">
+<span class="eqno">(7)<a class="headerlink" href="#equation-eq-phi" title="Permalink to this equation">¶</a></span>\[
+  \Delta\Phi(V)=\Phi_0-\pi\frac{V}{V_{\pi}}
+\]</div>
+<p>where</p>
+<div class="math notranslate nohighlight">
+\[
+  \Phi_0 = \frac{2\pi}{\lambda} \left( n_e - n_o\right)L
+\qquad {\mathrm{and}} \qquad
+V_{\pi}=\frac{d}{L}\frac{\lambda}{\left(r_{33}^{\phantom{3}} n_e^{3}-r_{13}^{\phantom{3}} n_o^{3} \right)}
+\]</div>
+<p>are the retardation for <span class="math notranslate nohighlight">\(V=0\)</span> and the so called half-wave voltage, respectively. At <span class="math notranslate nohighlight">\(V=V_\pi\)</span> the relative phase retardation between the two polarizations is <span class="math notranslate nohighlight">\(\pi\)</span>, causing the Pockels cell to act as a half-wave plate.</p>
+</div>
+<div class="section" id="transverse-intensity-modulation">
+<h3>Transverse Intensity Modulation<a class="headerlink" href="#transverse-intensity-modulation" title="Permalink to this headline">¶</a></h3>
+<p>One can use a Pockels Cell to modulate the intensity of light. As we have
+seen, the relative phase retardation between the two polarizations is variable. For
+intensity modulation, one needs to put the Pockels cell between two crossed
+polarizers, placed at <span class="math notranslate nohighlight">\(45^\circ\)</span> with respect to the optical axes of the crystal.
+This set-up has an intensity transmittance <span class="math notranslate nohighlight">\(T = \sin^2 (\Phi/2)\)</span>.
+With equation <a class="reference internal" href="#equation-eq-phi">(7)</a> the transmittance of the device then is a periodic function of V:</p>
+<div class="math notranslate nohighlight">
+\[
+  T (V)=\sin^2 \left( \frac{\Phi_0}{2} - \frac{\pi}{2}\frac{V}{V_{\pi}} \right)  .
+\]</div>
+<p>The device can also be used as a linear modulator if the system is operated
+in the region near <span class="math notranslate nohighlight">\( T(V)=1/2\)</span>.</p>
+</div>
+<div class="section" id="optical-activity-and-faraday-effect">
+<h3>Optical Activity and Faraday-Effect<a class="headerlink" href="#optical-activity-and-faraday-effect" title="Permalink to this headline">¶</a></h3>
+<p>Optically active media rotate the plane of polarization of
+linear polarized light. As described above, one can treat
+linear polarization as a superposition of two circular polarized
+waves with the opposite direction of rotation. In an optically active
+medium these two circular waves have different phase velocities,
+and thus the resulting linear polarized wave turns its plane of
+polarization. Natural optical activity appears in chiral media,
+such as solutions of dextrose or lactic acid. For these media, the
+direction of rotation does not depend on the direction of propagation through them; the behaviour is symmetric.</p>
+<p>Some media become optically active when an axial magnetic field is applied, which is known as the Faraday effect.
+In this case the direction of rotation does depend on the direction of propagation, because the
+B-Field determines a spatial axis and thus breaks symmetry.
+The angle by which the polarization is rotated depends on the length of the medium <span class="math notranslate nohighlight">\(L\)</span>, on
+the magnetic field strength <span class="math notranslate nohighlight">\(|\vec{B}|\)</span> and on the so-called Verdet
+constant <span class="math notranslate nohighlight">\(\upsilon\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+  \alpha_{\mathrm{rot}}=\upsilon L|\vec{B}|.
+\]</div>
+<p>The Verdet constant is a function of the wavelength:
+$<span class="math notranslate nohighlight">\(
+  \upsilon=-\frac{\pi\gamma}{\lambda n}
+\)</span>$</p>
+<p>where the magnetogyration coefficient <span class="math notranslate nohighlight">\(\gamma\)</span> is a material constant of the medium.</p>
+<div class="figure align-default" id="fig-iso">
+<a class="reference internal image-reference" href="_images/Faraday.png"><img alt="_images/Faraday.png" src="_images/Faraday.png" style="width: 8cm;" /></a>
+<p class="caption"><span class="caption-number">Fig. 5 </span><span class="caption-text">A Faraday isolator or optical diode</span><a class="headerlink" href="#fig-iso" title="Permalink to this image">¶</a></p>
+</div>
+<p>The Faraday effect can be used to build an optical isolator.
+An optical isolator consists of a medium sensitive to the Faraday effect in an axial magnetic field.
+The set-up is enclosed by two polarizers with an angle of <span class="math notranslate nohighlight">\(45^\circ\)</span> to each other, as shown
+in figure <a class="reference internal" href="#fig-iso"><span class="std std-numref">Fig. 5</span></a>.
+In an optical isolator the first polarizer defines a plane of linear polarization of the light incident on the optically active medium inside the isolator.
+The medium rotates the plane of polarization by <span class="math notranslate nohighlight">\(45^\circ\)</span> clockwise, so that the light can pass the rear polarizer.</p>
+<p>Light entering the isolator from the other side will first be polarization filtered by the rear polarizer.
+The plane of polarization is then rotated again by <span class="math notranslate nohighlight">\(45^\circ\)</span> by the medium, this time counter-clockwise. The result is that the polarization is finally rotated perpendicular to the front polarizer, thus it is absorbed.
+In this way the optical isolator is a one-way device for light, so that is also known as an optical diode.
+Note that the length of the active medium and the magnetic field determine the amount by which the polarization is rotated, so that optical isolators need to be designed to the wavelength of the used light in order to work properly.</p>
+</div>
+</div>
+<div class="section" id="experiment">
+<h2>Experiment<a class="headerlink" href="#experiment" title="Permalink to this headline">¶</a></h2>
+<p>In this part you will get a feeling of how an electric field (a voltage) can alter the optical properties of a crystal,
+in the sense that the refractive index of the material is changed.
+In the first few experiments you will measure the change of the index of refraction directly.
+In the second set of experiments, you will study the extent of the manipulation by its effect on the polarization state of light
+transmitted through the crystal.</p>
+<p>The electric field is usually applied in the direction of the optical axis of the crystal.
+There are two possibilities for the direction of the light: parallel or perpendicular to
+the electric field. In the set-up used in this lab-course, the electric field is along the optical axis and the
+laser beam is incident perpendicular to the field.
+Take a closer look at the device; you can clearly see the (copper) electrodes against the crystal.
+(Don’t do this when the laser is on…)</p>
+<p>Since the electro-optic effects are only rather small, one needs a high voltage to drive the Pockels cell.
+The high voltage power supply used to drive the Pockels cell can be controlled by the dials on its front, see
+<a class="reference internal" href="#fig-hv"><span class="std std-numref">Fig. 6</span></a>.</p>
+<div class="figure align-default" id="fig-hv">
+<a class="reference internal image-reference" href="_images/hv_front.png"><img alt="_images/hv_front.png" src="_images/hv_front.png" style="width: 12cm;" /></a>
+<p class="caption"><span class="caption-number">Fig. 6 </span><span class="caption-text">Front view of the high voltage power supply used to drive the Pockels cell.</span><a class="headerlink" href="#fig-hv" title="Permalink to this image">¶</a></p>
+</div>
+<p>The preferred way during the practicum, however, is to control the high voltage supply using a control voltage, applied to
+the analog input on the front panel of the power supply. A periodic input signal will cause an accordingly varying
+output voltage, e.g. you can sweep the voltage on the Pockels cell using a sawtooth wave form.
+The toggle-switch determines whether the power supply is controlled by the dial-settings (<em>Int</em>) or by the
+input voltage (<em>Ext</em>).
+Note, however, that the output voltage or current can never exceed the internal control settings (as set with the dials),
+even when using the analog input: make sure that you set the output range correctly.
+The output voltage and current are indicated on the displays of the power supply.</p>
+<p>An input voltage between 0V and <span class="math notranslate nohighlight">\(\sim 10\)</span>V at the analog input results in an output voltage between
+0V and <span class="math notranslate nohighlight">\(\sim3\)</span>kV. The voltage applied to the Pockels cell should not exceed 2kV. A voltage range between 0V and 1.8kV produces sufficient data to evaluate.</p>
+<div class="section" id="characterization-of-the-high-voltage-supply-familiarization-with-the-set-up">
+<h3>Characterization of the high voltage supply / Familiarization with the set-up<a class="headerlink" href="#characterization-of-the-high-voltage-supply-familiarization-with-the-set-up" title="Permalink to this headline">¶</a></h3>
+<p>During the experiments you will need to measure the desired optical signal with a photodiode against the voltage on the Pockels cell.
+The oscilloscope cannot handle the high voltage, but you can measure the control voltage on the analog input of the high voltage supply.
+Therefore, you need to know the voltage amplification factor of the high voltage power supply.
+The power supply is built for low frequency modulation, so either use a low frequency modulation or the output of the low voltage power supply.</p>
+<p><strong>First step</strong>:  Measure the amplification factor of the high voltage amplifier / power supply.</p>
+<ul class="simple">
+<li><p>Switch off the high voltage power supply. Leave the power supply connected to the filter-box,
+but disconnect the Pockels cell from the filter-box in order no to harm the cell inadvertently.
+The filter-box remains connected to discharge the high-voltage output and to let you check whether the current-settings
+of the high voltage power supply are not too low.
+To disconnect the cell from the filter-box: disconnect the cables <strong>on the filter-box side</strong>
+so that you can measure the entire set-up without high voltage risks, such as short-circuiting etc. due to having open cables next to a steel table.</p></li>
+<li><p>Next, connect the dc power supply to the analog input of the high voltage power supply. Set the toggle switch to <em>Ext</em>.</p></li>
+<li><p>Since the oscilloscope cannot take more than 300V, you cannot measure the high voltage signal directly;
+you will have to rely on the indicators on the display of the power supply.</p></li>
+<li><p>Evaluate your measurements in your log book (Is the amplification linear? Can you use your data points or do they scatter too much? What limits should you set on the input voltage the not to harm the Pockels cell? etc.) before proceeding with the next step.</p></li>
+</ul>
+<p><strong>Second step</strong>: Set up the function generator and the oscilloscope for the following series of experiments</p>
+<ul class="simple">
+<li><p>Connect the function-generator to the oscilloscope and display a full period on the screen with a frequency of <span class="math notranslate nohighlight">\(\sim0.6 - 1\)</span>Hz.</p></li>
+<li><p>Adjust the amplitude and offset of the function generator correctly, so that the Pockels cell will survive
+(<span class="math notranslate nohighlight">\(V_{\mathrm{output}}=0-1800\)</span>V).</p></li>
+<li><p>Hint: make your adjustments of the function generator at a high frequency (<span class="math notranslate nohighlight">\(\sim\)</span>kHz) to have an accurate feedback on your changes.
+Don’t forget to switch back to low frequencies when actually measuring.</p></li>
+</ul>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Parameter</p></th>
+<th class="head"><p>value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Optical wavelength</p></td>
+<td><p><span class="math notranslate nohighlight">\(\lambda=632.8\)</span>~nm</p></td>
+</tr>
+<tr class="row-odd"><td><p>Pockels cell material</p></td>
+<td><p>LiNbO<span class="math notranslate nohighlight">\(_3\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>Electrode separation</p></td>
+<td><p><span class="math notranslate nohighlight">\(d=2\)</span>~mm</p></td>
+</tr>
+<tr class="row-odd"><td><p>Crystal length</p></td>
+<td><p><span class="math notranslate nohighlight">\(L=20\)</span>~mm</p></td>
+</tr>
+<tr class="row-even"><td><p>Indices of refraction</p></td>
+<td><p><span class="math notranslate nohighlight">\(n_o=2.286\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>at  <span class="math notranslate nohighlight">\(\lambda=633\)</span>~nm</p></td>
+<td><p><span class="math notranslate nohighlight">\(n_e=2.200\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="mach-zehnder-interferometer">
+<h3>Mach-Zehnder interferometer<a class="headerlink" href="#mach-zehnder-interferometer" title="Permalink to this headline">¶</a></h3>
+<p>To determine whether light undergoes a phase shift and to which extent, one needs a set-up that compares the phase of
+the original laser beam with the phase of the light transmitted through the Pockels cell. Here, a Mach-Zehnder interferometer is useful.
+A Mach-Zehnder interferometer consists of two non-polarizing (<strong>Why?</strong>) beam splitters
+and two (totally reflecting) mirrors, see <a class="reference internal" href="#fig-mzi"><span class="std std-numref">Fig. 7</span></a>. Since the two beams travel independently and spatially
+separated through the interferometer, phase shifts can be introduced to a single beam, without affecting the other one.
+The result of the phase shift can be determined by the intensity output.
+Due to the two separated beams, a Mach-Zehnder Interferometer is difficult to align,
+but its high sensitivity to phase shifts makes it useful for various applications.</p>
+<div class="figure align-default" id="fig-mzi">
+<a class="reference internal image-reference" href="_images/mzi.png"><img alt="_images/mzi.png" src="_images/mzi.png" style="width: 12cm;" /></a>
+<p class="caption"><span class="caption-number">Fig. 7 </span><span class="caption-text">Set-up for phase modulation within a Mach-Zehnder Interferometer</span><a class="headerlink" href="#fig-mzi" title="Permalink to this image">¶</a></p>
+</div>
+<p>The intensity at one output port of the interferometer is <span class="math notranslate nohighlight">\(I_{\mathrm{out}}\)</span> is related to the incident intensity
+<span class="math notranslate nohighlight">\(I_{\mathrm {in}}\)</span> by</p>
+<div class="math notranslate nohighlight">
+\[
+  I_{\mathrm{out}}
+=\tfrac{1}{2}I_{\mathrm {in}}+\tfrac{1}{2}I_{\mathrm {in}}\cos\phi
+= \tfrac{1}{2} I_{\mathrm {in}} \left(1+\cos\phi\right)
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(\phi=\phi_1-\phi_2\)</span> is the phase difference between the light beams passing
+through the branches 1 and 2. For the transmittance we have:</p>
+<div class="math notranslate nohighlight">
+\[
+  T=\frac{I_{\mathrm{out}}}{I_{\mathrm {in}}} =\tfrac{1}{2}\left(1+\cos\phi\right)=\cos^2\frac{\phi}{2}
+\]</div>
+<p>If the Pockels cell is placed in branch 1, we get</p>
+<div class="math notranslate nohighlight">
+\[
+  \phi_1(V)=\left(\phi_1\right)_{\mathrm{empty}} + \Phi(V)
+= \left(\phi_1\right)_0+\left(\Phi_0-\pi\frac{V}{U_{\pi}}\right)
+= \left(\phi_1\right)_0'-\pi\frac{V}{U_{\pi}}.
+\]</div>
+<p>Yielding the following relation between <span class="math notranslate nohighlight">\(\phi\)</span> and the applied voltage:</p>
+<div class="math notranslate nohighlight">
+\[
+  \phi(V)=\phi_0-\pi\frac{V}{U_{\pi}}
+\]</div>
+<p>where the constant <span class="math notranslate nohighlight">\(\phi_0=\left(\phi_1-\phi_2\right)_0\)</span> includes the path difference between
+the two branches. (In this set-up <span class="math notranslate nohighlight">\(\phi_0 = 0\)</span>, but in other books you might find other
+types of Mach Zehnder Interferometers.)</p>
+<p>We finally obtain for the transmittance:</p>
+<div class="math notranslate nohighlight">
+\[
+  T(V)=\cos^2\left(\frac{\phi_0}{2}-\frac{\pi}{2}\frac{V}{U_{\pi}} \right)
+\]</div>
+<div class="section" id="todo">
+<h4>ToDo<a class="headerlink" href="#todo" title="Permalink to this headline">¶</a></h4>
+<p><strong>First step:</strong> Determine the directions of the optical axes of the Pockels cell (see also chapter on <a class="reference internal" href="f85-main.html"><span class="doc std std-doc">F85</span></a> and
+the table above). Construct a Mach-Zehnder Interferometer with the electro-optical modulator in one arm.</p>
+<ul class="simple">
+<li><p>Set up the first beam splitter and the mirrors. It is recommended to have the beams all lying in the same, horizontal, plane.
+If this is impossible, the original laser beam might not be parallel to the optical table, or the first beam splitter is tilted.
+The former can be corrected by using a so-called ‘’dog leg’’ before entering the interferometer: use two mirrors to create a
+Z-shaped laser beam path, which allows you to align the laser beam in every possible direction.
+The latter problem can be corrected with the screws of the mounting of the beam splitting cube.</p></li>
+<li><p>Next, adjust the mirrors so that both laser beams cross (again, preferably in the same horizontal plane) at a certain point,
+preferably with the beam paths perpendicular to each other.</p></li>
+<li><p>Insert the second beam splitter. The point where the two beams cross has to be at the beam splitting interface within the cube. You will have a good approximation of this when the beams enter the cube at the same position (in the center of the surface, ideally) and/or if they seem to overlap directly after the cube in both exit ports of the interferometer.</p></li>
+<li><p>Now, adjust the second beam splitter so that both beams in at least one exit port overlap.
+At a proper alignment you will be rewarded with an interference pattern in the exit beams.
+It is helpful to use a lens to widen up the beam, so that you can detect the interference pattern more easily.</p></li>
+<li><p>To measure the phase difference, adjust the interferometer so that you see <span class="math notranslate nohighlight">\(\sim 3 - 5\)</span> interference maxima in the laser beam.
+Widen up the interference pattern with a lens so that the fringe spacing is approx. 2mm at the position of the photodiode
+and project only the maximum of a single fringe (<strong>Why?</strong>) onto the photodiode (use an iris).</p></li>
+<li><p>In general: Keep in mind that you can only influence <em>reflected</em> beams, not those transmitted by beam splitters. Also note that a large interferometer is more sensitive to noise
+(vibrations from walking around etc.).</p></li>
+</ul>
+<p>Now set up the measurement</p>
+<ul class="simple">
+<li><p>Make sure you have determined the correct position/orientation of the Pockels cell with respect
+to the polarization of the incident light.</p></li>
+<li><p>Make sure that you do not saturate the photodiode (<span class="math notranslate nohighlight">\(V_{\mathrm{out}}&lt;3\)</span>V).</p></li>
+</ul>
+<p>Measure the output intensity as a function of the applied voltage for both crystal axes.</p>
+<p>Compare the result for both <span class="math notranslate nohighlight">\(\pm90^\circ\)</span> axes. What effect does a rotation of <span class="math notranslate nohighlight">\(180^\circ\)</span> of the Pockels cell have?</p>
+</div>
+<div class="section" id="evaluation">
+<h4>Evaluation<a class="headerlink" href="#evaluation" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>Determine the half-wave voltage <span class="math notranslate nohighlight">\(U_\pi\)</span> for both crystal axes.</p></li>
+<li><p>Determine the Pockels coefficients <span class="math notranslate nohighlight">\(r_{13}\)</span> and <span class="math notranslate nohighlight">\(r_{33}\)</span>.</p></li>
+</ul>
+<p>Just for fun: connect the loudspeaker to the photodiode and tap lightly on the table next to the interferometer; can you explain what you hear and what you see in the interference pattern?</p>
+</div>
+</div>
+<div class="section" id="polarization-manipulation-intensity-modulation">
+<h3>Polarization Manipulation / Intensity Modulation<a class="headerlink" href="#polarization-manipulation-intensity-modulation" title="Permalink to this headline">¶</a></h3>
+<p>The Pockels cell is a birefringent crystal, with both the fast axis and the slow axis voltage dependent, the device acts as an
+arbitrary-wave retarder.
+To understand this fact we have to observe the phase difference between both perpendicular planes
+of linear polarization.
+As explained in the theory section, this phase difference is given by</p>
+<div class="math notranslate nohighlight" id="equation-eq-phiexp">
+<span class="eqno">(8)<a class="headerlink" href="#equation-eq-phiexp" title="Permalink to this equation">¶</a></span>\[
+  \Delta\Phi(V)=\Phi_0-\pi\frac{V}{V_{\pi}}
+\]</div>
+<p>where</p>
+<div class="math notranslate nohighlight">
+\[
+  \Phi_0 = \frac{2\pi}{\lambda} \left( n_e - n_o\right)L
+\]</div>
+<p>and</p>
+<div class="math notranslate nohighlight" id="equation-eq-vpi">
+<span class="eqno">(9)<a class="headerlink" href="#equation-eq-vpi" title="Permalink to this equation">¶</a></span>\[
+  V_{\pi}=\frac{d}{L}\frac{\lambda}{\left(r_{33}^{\phantom{3}} n_e^{3}-r_{13}^{\phantom{3}} n_o^{3} \right)}
+\]</div>
+<p>are the retardation for <span class="math notranslate nohighlight">\(V=0\)</span> and the so called half-wave voltage, respectively.
+At <span class="math notranslate nohighlight">\(V=V_\pi\)</span> the relative phase retardation between the two polarizations is <span class="math notranslate nohighlight">\(\pi\)</span>,
+causing the Pockels cell to act as a half-wave plate.</p>
+<p>The effect of the Pockels cell on the polarization state of transmitted light can be studied in a manner equivalent to the experiments of  <a class="reference internal" href="f85-main.html"><span class="doc std std-doc">F85</span></a>. You can measure the intensity of light transmitted by a pair of crossed polarizers with the Pockels cell in between. Here, you will measure the intensity behind the analyzing polarizer with a photodiode as a
+function of the high voltage applied to the Pockels cell.</p>
+<div class="figure align-default" id="fig-eom45">
+<a class="reference internal image-reference" href="_images/intmod.png"><img alt="_images/intmod.png" src="_images/intmod.png" style="width: 12cm;" /></a>
+<p class="caption"><span class="caption-number">Fig. 8 </span><span class="caption-text">Experimental Set-up for Transverse Amplitude Modulation</span><a class="headerlink" href="#fig-eom45" title="Permalink to this image">¶</a></p>
+</div>
+<div class="section" id="to-do">
+<h4>To do<a class="headerlink" href="#to-do" title="Permalink to this headline">¶</a></h4>
+<p>Construct the set-up outlined in <a class="reference internal" href="#fig-eom45"><span class="std std-numref">Fig. 8</span></a>, with the Pockels cell placed between two crossed
+polarizers with their transmission axes at an angle of <span class="math notranslate nohighlight">\(45^\circ\)</span> to the optical axis of the crystal.
+<strong>Why does the Pockels cell need to be at <span class="math notranslate nohighlight">\(45^\circ\)</span>?</strong>
+Make sure you have determined the correct orientation of the Pockels cell.
+Make sure you will not saturate the photodiode.</p>
+<ul class="simple">
+<li><p>Measure the transmitted power on the photodiode as a function of the applied high voltage on the Pockels
+cell for both orientations <span class="math notranslate nohighlight">\(\pm 45^\circ\)</span>.
+Record your data on the computer.</p></li>
+</ul>
+</div>
+<div class="section" id="id2">
+<h4>Evaluation<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>Use the plots of transmitted power vs. applied voltage for both orientations <span class="math notranslate nohighlight">\(\pm 45^\circ\)</span> to determine the half-wave voltage <span class="math notranslate nohighlight">\(V_\pi\)</span>.</p></li>
+<li><p>What is the difference between the <span class="math notranslate nohighlight">\(\pm 45^\circ\)</span> cases?</p></li>
+<li><p>If the first intensity maximum is not at 0V: why is that?</p></li>
+<li><p>Calculate <span class="math notranslate nohighlight">\(V_\pi^{\mathrm{calc}}\)</span> for the Pockels cell, using Eq.<a class="reference internal" href="#equation-eq-vpi">(9)</a> and your previously measured
+values of <span class="math notranslate nohighlight">\(r_{13}\)</span> and <span class="math notranslate nohighlight">\(r_{33}\)</span>.</p></li>
+<li><p>Calculate <span class="math notranslate nohighlight">\({V_\pi^{\mathrm{calc}}}'\)</span> directly from your measured <span class="math notranslate nohighlight">\(\left( U_\pi \right)_e\)</span> and <span class="math notranslate nohighlight">\(\left( U_\pi \right)_o\)</span>.</p></li>
+<li><p>Compare your calculated and measured results to the specifications: <span class="math notranslate nohighlight">\(V_\pi \approx 380\)</span>V.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="linear-amplitude-modulation">
+<h3>Linear Amplitude Modulation<a class="headerlink" href="#linear-amplitude-modulation" title="Permalink to this headline">¶</a></h3>
+<p>Consider the set-up of your previous experiment, see <a class="reference internal" href="#fig-eom45"><span class="std std-numref">Fig. 8</span></a>.
+For a certain range of voltages, the intensity output of the setup shows an almost linear dependency
+with the applied voltage.
+This means that it is possible to linearly modulate the intensity of the transmitted light and thus transmit an
+arbitrary signal optically.
+For this, one has to modulate the applied voltage to the Pockels cell with the desired signal.
+For maximum signal amplitude modulation, you have to set up the Pockels cell at this particular voltage, then
+also a low-voltage signal can suffice to give an appreciable intensity variation.
+<strong>What is the necessary high voltage offset? At this voltage, the Pockels cell acts equivalently to another optical element. Which element is that?</strong></p>
+<div class="figure align-default" id="fig-signal">
+<a class="reference internal image-reference" href="_images/signal.png"><img alt="_images/signal.png" src="_images/signal.png" style="width: 12cm;" /></a>
+<p class="caption"><span class="caption-number">Fig. 9 </span><span class="caption-text">Voltage range for Linear Amplitude Modulation</span><a class="headerlink" href="#fig-signal" title="Permalink to this image">¶</a></p>
+</div>
+<p>To test the possibility of linear amplitude modulation, and to get an idea of the possible response-time of the Pockels cell,
+use the set-up of the previous experiment, see <a class="reference internal" href="#fig-eom45"><span class="std std-numref">Fig. 8</span></a>.
+Use the ‘internal’ setting of the high voltage supply to apply a DC offset voltage to the Pockels cell.
+Use the function generator for a high frequency (<span class="math notranslate nohighlight">\(\sim\)</span>kHz) signal.
+Add both signals via the filter-box in the set-up; now the Pockels cell will ‘see’ both voltage signals.
+Compare the function generator / input signal with the photodiode signal on the oscilloscope;
+optimize the amplitude response of the photodiode (in other words: optimize the modulation efficiency of your set-up)
+by varying the offset voltage for the Pockels cell.</p>
+<div class="section" id="id3">
+<h4>Evaluation<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>What happens with the transmitted signal at different offset voltages? Why is that?</p></li>
+<li><p>At which points can you improve the signal-to-noise ratio? e.g. should you amplify the laser power, the high voltage, the modulation amplitude and/or other parts of the set-up?</p></li>
+</ul>
+<p>Now replace the signal of the function generator with a radio signal and connect the output to
+a loudspeaker instead of to the oscilloscope.
+First check with the loudspeaker whether the radio (web-radio from the lab-computer) is turned on and tuned to a radio station.
+Connect the photodiode to the loudspeaker and listen to the effect of changing the offset voltage on the Pockels cell
+and varying the orientation of the last polarizer.</p>
+<ul class="simple">
+<li><p>Describe and explain your observations.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="note">
+<h3>Note<a class="headerlink" href="#note" title="Permalink to this headline">¶</a></h3>
+<p>The fast response of electro-optic modulators to electric field changes is used in LCD-displays and similar devices.
+Electric fields then switch the orientation of long polymer chains between crossed polarizers to vary the light transmission
+through the pixel.</p>
+<hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="values"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p>Another source gives for LiNbO<span class="math notranslate nohighlight">\(_3\)</span>: <span class="math notranslate nohighlight">\(r_{13}=9.6\)</span>, <span class="math notranslate nohighlight">\(r_{22} = 6.8\)</span>, <span class="math notranslate nohighlight">\(r_{33} = 30.9\)</span>, <span class="math notranslate nohighlight">\(r_{51} = 32.6\)</span>. All values in [pm/V].</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="f85-main.html" title="previous page">F85: Polarization optics</a>
+    <a class='right-next' id="next-link" href="f87.html" title="next page">F87: Acousto-Optic Effect</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By The tutors of the FP optics<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>
