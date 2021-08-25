@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>F85: Polarization optics &#8212; TP Optics in Heidelberg</title>
+    <title>Part 1: Polarization optics &#8212; TP Optics in Heidelberg</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
   <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -23,7 +23,7 @@
 
     
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.e8f53015daec13862f6db5e763c41738.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
@@ -42,18 +42,18 @@
     <script src="_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="F86: Electro-optic effect" href="f86.html" />
+    <link rel="next" title="Part 2: Electro-optic effect" href="f86.html" />
     <link rel="prev" title="Welcome to the FP Optics" href="intro.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -82,7 +82,7 @@
 </div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
@@ -94,17 +94,17 @@
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   F85: Polarization optics
+   Part 1: Polarization optics
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="f86.html">
-   F86: Electro-optic effect
+   Part 2: Electro-optic effect
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="f87.html">
-   F87: Acousto-Optic Effect
+   Part 3: Acousto-Optic Effect
   </a>
  </li>
 </ul>
@@ -192,7 +192,7 @@
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Contents
             </div>
-            <nav id="bd-toc-nav">
+            <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#theory">
@@ -232,8 +232,8 @@
         
               <div>
                 
-  <div class="section" id="f85-polarization-optics">
-<h1>F85: Polarization optics<a class="headerlink" href="#f85-polarization-optics" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="part-1-polarization-optics">
+<h1>Part 1: Polarization optics<a class="headerlink" href="#part-1-polarization-optics" title="Permalink to this headline">¶</a></h1>
 <p>Polarization of light has been and continues to be a subject of intensive research. The modern era of polarization began in the early 19th century. In 1808, Etienne-Louis Malus made a crucial discovery while looking at the setting sun through a crystal of Iceland spar. He observed that the intensity of the reflected light changed when he rotated the crystal. He further studied this phenomenon and showed that this behavior was not only restricted to Iceland spar but could be generally observed in any ordinary substance. His work led to the famous Malus Law which is a relation for the transmitted intensity through a polarizer as a function of incident polarization.</p>
 <p>In 1812, Sir David Brewster built upon the work of Malus and showed that for a given material, there exists a unique angle of incidence for which light is fully transmitted or reflected depending on its polarization. This angle is known as Brewster angle. A more general description was given by Augustine-Jean Fresnel who deduced the so-called Fresnel equations which describes the behavior of light at the boundary of two media with different refractive indices, including the effects of polarization.</p>
 <p>These groundbreaking discoveries have led to the emergence of new fields of fundamental physics such as quantum optics and have also resulted in several technological applications which have made their way to our daily lives.</p>
@@ -439,12 +439,32 @@ modern books</p>
               </div>
               
         
-        <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="intro.html" title="previous page">Welcome to the FP Optics</a>
-    <a class='right-next' id="next-link" href="f86.html" title="next page">F86: Electro-optic effect</a>
 
-        </div>
+
+
+<div class='prev-next-bottom'>
+    
+    <div id="prev">
+        <a class="left-prev" href="intro.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">Welcome to the FP Optics</p>
+            </div>
+        </a>
+    </div>
+     <div id="next">
+        <a class="right-next" href="f86.html" title="next page">
+            <div class="prevnext-info">
+                <p class="prevnext-label">next</p>
+                <p class="prevnext-title">Part 2: Electro-optic effect</p>
+            </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
+        </a>
+     </div>
+
+</div>
         
         </div>
     </div>
