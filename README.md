@@ -29,3 +29,4 @@ Here are the typical steps to make changes:
 - Run `jupyter-book build tutorial` to create the website files.
 - Change the directory into *tutorial* folder through `cd tutorial`.
 - push the changes through `ghp-import -n -p -f _build/html`.
+- remove the changes to the `_build` directory again.
