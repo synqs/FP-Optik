@@ -30,3 +30,11 @@ Here are the typical steps to make changes:
 - Change the directory into *tutorial* folder through `cd tutorial`.
 - push the changes through `ghp-import -n -p -f _build/html`.
 - remove the changes to the `_build` directory again.
+
+## Create a book.pdf
+
+- make sure that you have a running latex environment
+- run `jupyter-book build tutorial/ --builder pdflatex`from the root directory.
+- copy the *book.pdf* file that is created in *tutorial/\_build/latex* into the root directory.
+- remove the folder that was created in *tutorial\_build*
+- push the changes.
