@@ -17,21 +17,19 @@ The tutorial is based on [jupyter-books](https://jupyterbook.org/intro.html).
 Here are the typical steps to make changes:
 
 - clone this repository to your local PC.
-- Install jupyter-book through `pip install -U jupyter-book`
+- go into the directory folder.
+- install the necessary requirements through `pipenv install`
 - make changes in the appropriate markdown file. They are all located in the `tutorial` folder.
-- run `jupyter-book build tutorial` once you are in the git folder to create the website.
+- run `pipenv run jupyter-book build tutorial` once you are in the git folder to create the website.
 - You can look at your book by opening this file in a browser: *tutorial/_build/html/index.html*
 
 ## Publish changes to the github pages
 
-- Pip install the *ghp-import* package through `pip install ghp-import`.
-- Run `jupyter-book build tutorial` to create the website files.
-- push the changes through `ghp-import -n -p -f tutorial/\_build/html`.
+- push the changes through `pipenv run ghp-import -n -p -f tutorial/\_build/html`.
 
 ## Create a book.pdf
 
 - make sure that you have a running latex environment
-- run `jupyter-book build tutorial/ --builder pdflatex`from the root directory.
+- run `pipenv jupyter-book build tutorial/ --builder pdflatex`from the root directory.
 - copy the *book.pdf* file that is created in *tutorial/\_build/latex* into the root directory.
-- remove the folder that was created in *tutorial\_build*
 - push the changes.
