@@ -20,16 +20,13 @@ Here are the typical steps to make changes:
 - Install jupyter-book through `pip install -U jupyter-book`
 - make changes in the appropriate markdown file. They are all located in the `tutorial` folder.
 - run `jupyter-book build tutorial` once you are in the git folder to create the website.
-- You can look at your book by opening this file in a browser: *tutorial/\_build/html/index.html*
-- Delete the *\_build* directory once you are done with the changes.
+- You can look at your book by opening this file in a browser: *tutorial/_build/html/index.html*
 
 ## Publish changes to the github pages
 
 - Pip install the *ghp-import* package through `pip install ghp-import`.
 - Run `jupyter-book build tutorial` to create the website files.
-- Change the directory into *tutorial* folder through `cd tutorial`.
-- push the changes through `ghp-import -n -p -f _build/html`.
-- remove the changes to the `_build` directory again.
+- push the changes through `ghp-import -n -p -f tutorial/\_build/html`.
 
 ## Create a book.pdf
 
